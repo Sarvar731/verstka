@@ -1,0 +1,125 @@
+@media (max-width: 610px) {
+  .header {
+    &__menu {
+      margin: 0px 0px 0px 57px;
+    }
+  }
+  .main {
+    &__block {
+      &__body > *:not(:first-child) {
+        margin: 0px 0px 22px 0px;
+      }
+      &__body {
+        padding: 174px 0px 0px 0px;
+      }
+    }
+  }
+  .flowers {
+    padding: 75px 0px 100px 0px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cocao {
+    &__img {
+      height: 172px;
+    }
+  }
+  .footer {
+    &__body {
+      &__item {
+        margin: 0px 0px 0px 58px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .cocao {
+    &__img {
+      height: 142px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .cocao {
+    &__img {
+      height: 120px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .cocao {
+    &__img {
+      height: 73px;
+    }
+  }
+}
+@media (max-width: 330px) {
+  .footer {
+    &__body {
+      &__item {
+        margin: 0px 0px 0px 37px;
+      }
+    }
+  }
+}
+@media (max-width: 776px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 27px;
+    height: 12px;
+    span {
+      margin-bottom: 2px;
+      display: block;
+      height: 2px;
+      width: 26px;
+      background-color: #fff;
+      transition: 0.5s all;
+    }
+    &_active {
+      span {
+        margin-bottom: -2px;
+        width: 27px;
+        &:nth-child(1) {
+          transform: translateY(3px) rotate(-45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          transform: translateY(3px) rotate(45deg);
+        }
+      }
+    }
+  }
+  .header {
+    &__menu {
+      &__list {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: 0.6s all;
+        &_active {
+          left: 0;
+        }
+      }
+      &__item:not(:last-child) {
+        margin: 0px 0px 10px 0px;
+      }
+      
+    }
+  }
+}
